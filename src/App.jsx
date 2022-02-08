@@ -27,7 +27,7 @@ function App() {
         <div class="attribution">
           Challenge by{" "}
           <a
-            href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw "
+            href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"
             target="_blank"
             rel="noreferrer"
           >

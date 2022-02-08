@@ -1,4 +1,5 @@
-import ellipsis from "./icon-ellipsis.svg";
+import Ellipsis from "./Images/icon-ellipsis.svg";
+import Avatar from "./Images/image-jeremy.png";
 import "./App.css";
 
 function App() {
@@ -6,25 +7,27 @@ function App() {
     <div className="App">
       <header className="App-header">
         <section>
-          <h2>Report for </h2>
+          <img src={Avatar} alt="Menu" />
+          <h2>Report for</h2>
           <h1>Jeremy Robson</h1>
           <div>Daily Weekly Monthly</div>
         </section>
       </header>
       <section>
-        <h3>Work</h3>
-        5hrs {/* <!-- daily --> */}
-        Previous - 7hrs {/* <!-- daily --> */}
-        32hrs {/* <!-- weekly --> */}
-        Previous - 36hrs {/* <!-- weekly --> */}
-        103hrs {/* <!-- monthly --> */}
-        Previous - 128hrs {/* <!-- monthly --> */}
+        <div>
+          <h2>Work</h2>
+          <img src={Ellipsis} alt="Menu" />
+        </div>
+        <div>
+          <h1>5hrs</h1>
+          <h2>Previous - 7hrs</h2>
+        </div>
       </section>
       <footer>
         <div class="attribution">
           Challenge by{" "}
           <a
-            href="https://www.frontendmentor.io?ref=challenge"
+            href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw "
             target="_blank"
             rel="noreferrer"
           >

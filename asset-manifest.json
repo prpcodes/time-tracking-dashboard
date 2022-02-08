@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/time-tracking-dashboard/static/css/main.073c9b0a.css",
-    "main.js": "/time-tracking-dashboard/static/js/main.634d8365.js",
+    "main.css": "/time-tracking-dashboard/static/css/main.e6c13ad2.css",
+    "main.js": "/time-tracking-dashboard/static/js/main.5d74676b.js",
     "static/js/787.55b17a80.chunk.js": "/time-tracking-dashboard/static/js/787.55b17a80.chunk.js",
-    "static/media/logo.svg": "/time-tracking-dashboard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/image-jeremy.png": "/time-tracking-dashboard/static/media/image-jeremy.71cd41f11bee24c1ded3.png",
     "index.html": "/time-tracking-dashboard/index.html",
-    "main.073c9b0a.css.map": "/time-tracking-dashboard/static/css/main.073c9b0a.css.map",
-    "main.634d8365.js.map": "/time-tracking-dashboard/static/js/main.634d8365.js.map",
+    "static/media/icon-ellipsis.svg": "/time-tracking-dashboard/static/media/icon-ellipsis.a57a4ac863593bb69d31b4399823f745.svg",
+    "main.e6c13ad2.css.map": "/time-tracking-dashboard/static/css/main.e6c13ad2.css.map",
+    "main.5d74676b.js.map": "/time-tracking-dashboard/static/js/main.5d74676b.js.map",
     "787.55b17a80.chunk.js.map": "/time-tracking-dashboard/static/js/787.55b17a80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.634d8365.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5d74676b.js"
   ]
 }

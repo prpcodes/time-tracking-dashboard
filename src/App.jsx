@@ -1,6 +1,7 @@
-import Ellipsis from "./Images/icon-ellipsis.svg";
 import Avatar from "./Images/image-jeremy.png";
+
 import "./App.css";
+import Card from "./Components/Card/Card";
 
 function App() {
   return (
@@ -13,16 +14,8 @@ function App() {
           <div>Daily Weekly Monthly</div>
         </section>
       </header>
-      <section>
-        <div>
-          <h2>Work</h2>
-          <img src={Ellipsis} alt="Menu" />
-        </div>
-        <div>
-          <h1>5hrs</h1>
-          <h2>Previous - 7hrs</h2>
-        </div>
-      </section>
+      <Card background="" title="Work" time="5" time_previous="7" />
+
       <footer>
         <div class="attribution">
           Challenge by{" "}

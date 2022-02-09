@@ -8,17 +8,20 @@ import Avatar from "./Images/image-jeremy.png";
 import data from "./data.json";
 
 class App extends React.Component {
-  componentDidMount() {}
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <section>
-            <img src={Avatar} alt="Menu" />
+        <header>
+          <div id="user">
+            <img src={Avatar} alt="Menu" width="78" height="78" />
             <h2>Report for</h2>
-            <h1>Jeremy Robson</h1>
-            <div>Daily Weekly Monthly</div>
-          </section>
+            <h1 id="name">Jeremy Robson</h1>
+          </div>
+          <div id="timeframes">
+            <a>Daily</a>
+            <a>Weekly</a>
+            <a>Monthly</a>
+          </div>
         </header>
         {data &&
           data.map((card) => (
@@ -29,23 +32,6 @@ class App extends React.Component {
               key={card.title}
             />
           ))}
-        <footer>
-          <div className="attribution">
-            Challenge by{" "}
-            <a
-              href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Frontend Mentor
-            </a>
-            . Coded by{" "}
-            <a href="https://github.com/prpwien/time-tracking-dashboard">
-              Philipp Proksch
-            </a>
-            .
-          </div>
-        </footer>
       </div>
     );
   }

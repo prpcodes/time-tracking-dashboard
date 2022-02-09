@@ -1,6 +1,9 @@
 import React from "react";
 import "./Card.css";
 
+//Images
+import Ellipsis from "../../Images/icon-ellipsis.svg";
+
 //Components
 import CardIcon from "./CardIcon";
 import CardBody from "./CardBody";

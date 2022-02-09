@@ -4,7 +4,6 @@ import "./Card.css";
 import CardBody from "./CardBody";
 
 //Images
-import Ellipsis from "../../Images/icon-ellipsis.svg";
 import IconWork from "../../Images/icon-work.svg";
 import IconExercise from "../../Images/icon-exercise.svg";
 import IconPlay from "../../Images/icon-play.svg";

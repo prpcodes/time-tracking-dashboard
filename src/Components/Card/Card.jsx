@@ -11,18 +11,21 @@ import IconStudy from "../../Images/icon-study.svg";
 
 function Card(props) {
   return (
-    <>
-      <div className="Card">
+    <section>
+      <div id="banner">
+        <img src={IconWork} alt="Work" width="78" height="78" />
+      </div>
+      <div id="card">
         <div id="header">
           <h1>{props.title}</h1>
           <img src={Ellipsis} alt="Menu" />
         </div>
-        <div>
+        <div id="body">
           <p id="time">{props.timeframes.daily.current}hrs</p>
           <p id="previous">Previous - {props.timeframes.daily.previous}hrs</p>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

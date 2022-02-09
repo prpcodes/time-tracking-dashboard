@@ -26,7 +26,6 @@ class App extends React.Component {
         {data &&
           data.map((card) => (
             <Card
-              background=""
               title={card.title}
               timeframes={card.timeframes}
               key={card.title}

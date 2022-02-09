@@ -6,7 +6,6 @@ section {
 #banner {
   height: 160px;
   width: 100%;
-  background-color: var(--lightorange);
   border-radius: 15px;
   display: flex;
   justify-content: flex-end;

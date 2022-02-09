@@ -61,7 +61,11 @@ header #user h1 {
   justify-content: space-between;
 }
 
-#timeframes a {
+#timeframes button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
   font-size: 18px;
   line-height: 21px;
   color: var(--desaturatedblue);

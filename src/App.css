@@ -1,0 +1,22 @@
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 255px 255px 255px 255px;
+  grid-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header card card card"
+    "header card card card";
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header {
+  height: 100%;
+  grid-area: header;
+  background-color: (--darkblue);
+}

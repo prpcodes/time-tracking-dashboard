@@ -4,6 +4,8 @@ import "./App.css";
 import Card from "./Components/Card/Card";
 //Images
 import Avatar from "./Images/image-jeremy.png";
+//Data
+import data from "./data.json";
 
 class App extends React.Component {
   componentDidMount() {}
@@ -18,9 +20,17 @@ class App extends React.Component {
             <div>Daily Weekly Monthly</div>
           </section>
         </header>
-        <Card background="" title="Work" time="5" time_previous="7" />
+        {data &&
+          data.map((card) => (
+            <Card
+              background=""
+              title={card.title}
+              timeframes={card.timeframes}
+              key={card.title}
+            />
+          ))}
         <footer>
-          <div class="attribution">
+          <div className="attribution">
             Challenge by{" "}
             <a
               href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"

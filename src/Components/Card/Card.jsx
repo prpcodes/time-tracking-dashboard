@@ -11,8 +11,8 @@ function Card(props) {
           <img src={Ellipsis} alt="Menu" />
         </div>
         <div>
-          <h1>{props.time}hrs</h1>
-          <h2>Previous - {props.time_previous}hrs</h2>
+          <h1>{props.timeframes.daily.current}hrs</h1>
+          <h2>Previous - {props.timeframes.daily.previous}hrs</h2>
         </div>
       </div>
     </>

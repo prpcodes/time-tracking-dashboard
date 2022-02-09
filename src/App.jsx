@@ -15,7 +15,7 @@ class App extends React.Component {
           <div id="user">
             <img src={Avatar} alt="Menu" width="78" height="78" />
             <h2>Report for</h2>
-            <h1 id="name">Jeremy Robson</h1>
+            <h1>Jeremy Robson</h1>
           </div>
           <div id="timeframes">
             <a>Daily</a>

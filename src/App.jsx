@@ -9,7 +9,7 @@ import data from "./data.json";
 
 function App() {
   // set the desired timeframe and send it to the card component
-  const [timeframe, setTimeframe] = useState();
+  const [timeframe, setTimeframe] = useState("Weekly");
 
   return (
     <div className="App">

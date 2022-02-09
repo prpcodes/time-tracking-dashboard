@@ -71,10 +71,10 @@ header #user h1 {
   color: var(--desaturatedblue);
 }
 
-#timeframes a:hover {
+#timeframes button:hover {
   color: #fff;
 }
 
-#timeframes a:nth-child(2) {
+#timeframes button:focus {
   color: #fff;
 }

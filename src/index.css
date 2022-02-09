@@ -13,9 +13,12 @@ body {
   --desaturatedblue: hsl(235, 45%, 61%);
   --paleblue: hsl(236, 100%, 87%);
 
+  margin: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--verydarkblue);
+  color: #fff;
 }

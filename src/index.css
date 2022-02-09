@@ -10,6 +10,7 @@ body {
   --softorange: hsl(43, 84%, 65%);
   --verydarkblue: hsl(226, 43%, 10%);
   --darkblue: hsl(235, 46%, 20%);
+  --semidarkblue: hsla(236, 41%, 34%, 1);
   --desaturatedblue: hsl(235, 45%, 61%);
   --paleblue: hsl(236, 100%, 87%);
 

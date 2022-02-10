@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import-normalize;
 body {
-  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
   font-family: "Rubik", sans-serif;
   --blue: hsl(246, 80%, 60%);
   --lightorange: hsl(15, 100%, 70%);

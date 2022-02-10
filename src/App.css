@@ -1,14 +1,12 @@
 .App {
   display: grid;
   grid-template-columns: repeat(4, 255px);
-  grid-template-rows: 160px 160px;
+  grid-template-rows: 244px 244px;
   gap: 30px 30px;
   grid-template-rows: auto;
   grid-template-areas:
     "header card card card"
     "header card card card";
-  width: 100%;
-  height: 100%;
 }
 
 header {
@@ -65,6 +63,8 @@ header #user h1 {
 #timeframes button {
   background: none;
   border: none;
+  text-decoration: none;
+  list-style-type: ;
   cursor: pointer;
   text-align: left;
   font-size: 18px;
@@ -85,7 +85,7 @@ header #user h1 {
     display: grid;
     grid-template-columns: 375px;
     grid-gap: 24px 0px;
-    grid-template-rows: 203px repeat(6, 160px);
+    grid-template-rows: 203px repeat(6, 244px);
     grid-template-areas:
       "header"
       "card"
@@ -96,7 +96,6 @@ header #user h1 {
       "card"
       "card";
     justify-content: center;
-    height: 100%;
   }
 
   header {
@@ -106,7 +105,7 @@ header #user h1 {
   }
 
   header #user {
-    max-height: 133px;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -125,7 +124,7 @@ header #user h1 {
   }
 
   header #timeframes button {
-    height: 100%;
+    height: 70px;
   }
 
   header img {

@@ -80,12 +80,11 @@ header #user h1 {
   color: #fff;
 }
 
-@media screen and (max-device-width: 1200px) {
+@media (max-width: 1200px) {
   .App {
     display: grid;
     grid-template-columns: 375px;
-    grid-gap: 24px 0px;
-    grid-template-rows: 203px repeat(6, 244px);
+    grid-template-rows: 203px repeat(6, 160px);
     grid-template-areas:
       "header"
       "card"

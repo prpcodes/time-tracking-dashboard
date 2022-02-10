@@ -23,15 +23,15 @@ function Card(props) {
     case "Social":
       styles.backgroundColor = "hsl(264, 64%, 52%)";
       break;
-    case "Self Care":
+    default:
+      // Self Care
       styles.backgroundColor = "hsl(43, 84%, 65%)";
       break;
-    default:
-      break;
   }
+
   return (
-    <section>
-      <div id="banner" style={styles}>
+    <section style={styles}>
+      <div id="banner">
         <CardIcon title={props.title} />
       </div>
       <div id="card">

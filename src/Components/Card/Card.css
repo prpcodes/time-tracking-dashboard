@@ -81,17 +81,19 @@ section {
 @media (max-width: 1200px) {
   section {
     width: 100%;
+    height: calc(100% - 50px);
   }
   #banner {
-    height: 78px;
+    height: calc(100% - 75px);
   }
   #card {
-    height: 122px;
+    height: calc(100% - 40px);
+    width: calc(100% - 48px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -38px;
+    padding: 28px 24px;
   }
   #card #header {
     margin: 0 0 4px 0;

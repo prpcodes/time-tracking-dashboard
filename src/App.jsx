@@ -11,6 +11,8 @@ function App() {
   // set the desired timeframe and send it to the card component
   const [timeframe, setTimeframe] = useState("Weekly");
 
+  const navigation = ["Daily", "Weekly", "Monthly"];
+
   return (
     <div className="App">
       <header>
@@ -21,29 +23,17 @@ function App() {
             <h1>Jeremy Robson</h1>
           </div>
         </div>
-        <div id="timeframes">
-          <button
-            onClick={() => {
-              setTimeframe("Daily");
-            }}
-          >
-            Daily
-          </button>
-          <button
-            onClick={() => {
-              setTimeframe("Weekly");
-            }}
-          >
-            Weekly
-          </button>
-          <button
-            onClick={() => {
-              setTimeframe("Monthly");
-            }}
-          >
-            Monthly
-          </button>
-        </div>
+        <nav id="timeframes">
+          {navigation.map((name) => (
+            <button
+              onClick={() => {
+                setTimeframe(name);
+              }}
+            >
+              {name}
+            </button>
+          ))}
+        </nav>
       </header>
       {data &&
         data.map((card) => (

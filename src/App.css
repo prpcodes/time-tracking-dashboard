@@ -96,6 +96,7 @@ header #user h1 {
       "card"
       "card";
     justify-content: center;
+    height: 100%;
   }
 
   header {

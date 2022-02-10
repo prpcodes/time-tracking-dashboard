@@ -14,7 +14,7 @@ body {
   --desaturatedblue: hsl(235, 45%, 61%);
   --paleblue: hsl(236, 100%, 87%);
 
-  margin: 0;
+  margin: 0 auto;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -22,4 +22,9 @@ body {
   align-items: center;
   background-color: var(--verydarkblue);
   color: #fff;
+}
+
+#root {
+  max-height: 100%;
+  max-width: 100%;
 }

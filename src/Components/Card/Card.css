@@ -1,11 +1,14 @@
 section {
   max-height: 100%;
   z-index: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
 }
 
 #banner {
-  height: 160px;
   width: 100%;
+  height: 160px;
   border-radius: 15px;
   display: flex;
   justify-content: flex-end;
@@ -21,10 +24,10 @@ section {
 
 #card {
   position: relative;
+  margin-top: -115px;
   z-index: 2;
   height: 199px;
   width: 100%;
-  margin-top: -115px;
   border-radius: 15px;
   background-color: var(--darkblue);
 }
@@ -76,4 +79,47 @@ section {
   font-size: 15px;
   line-height: 18px;
   color: var(--paleblue);
+}
+
+@media screen and (max-device-width: 1200px) {
+  #card {
+    height: 122px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 24px 28px;
+    margin-top: -38px;
+  }
+  #card #header {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #card #body {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #card #body #time {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+  }
+
+  #card #body #previous {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+  }
 }

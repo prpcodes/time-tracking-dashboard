@@ -1,8 +1,7 @@
 .App {
-  max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 255px 255px 255px 255px;
+  grid-template-columns: repeat(4, 255px);
   grid-gap: 30px;
   grid-template-rows: auto;
   grid-template-areas:
@@ -77,4 +76,25 @@ header #user h1 {
 
 #timeframes button:focus {
   color: #fff;
+}
+
+@media screen and (max-device-width: 1200px) {
+  .App {
+    margin: 81px 24px;
+    display: grid;
+    grid-template-columns: 375px;
+    grid-gap: 24px 0px;
+    grid-template-rows: 203px repeat(6, 160px);
+    grid-template-areas:
+      "header"
+      "card"
+      "card"
+      "card"
+      "card"
+      "card"
+      "card"
+      "card";
+    justify-content: center;
+    height: 100%;
+  }
 }

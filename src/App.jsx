@@ -16,8 +16,10 @@ function App() {
       <header>
         <div id="user">
           <img src={Avatar} alt="Menu" width="78" height="78" />
-          <h2>Report for</h2>
-          <h1>Jeremy Robson</h1>
+          <div>
+            <h2>Report for</h2>
+            <h1>Jeremy Robson</h1>
+          </div>
         </div>
         <div id="timeframes">
           <button

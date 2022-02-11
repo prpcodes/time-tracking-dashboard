@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders the timeframes", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const daily = screen.getByText(/Daily/i);
+  const weekly = screen.getByText(/Weekly/i);
+  const monthly = screen.getByText(/Monthly/i);
+  expect(daily).toBeInTheDocument();
+  expect(weekly).toBeInTheDocument();
+  expect(monthly).toBeInTheDocument();
 });

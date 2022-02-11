@@ -6,31 +6,8 @@ import CardIcon from "./CardIcon";
 import CardBody from "./CardBody";
 
 function Card(props) {
-  let styles = {};
-  switch (props.title) {
-    case "Work":
-      styles.backgroundColor = "hsl(15, 100%, 70%)";
-      break;
-    case "Play":
-      styles.backgroundColor = "hsl(195, 74%, 62%)";
-      break;
-    case "Study":
-      styles.backgroundColor = "hsl(348, 100%, 68%)";
-      break;
-    case "Exercise":
-      styles.backgroundColor = "hsl(145, 58%, 55%)";
-      break;
-    case "Social":
-      styles.backgroundColor = "hsl(264, 64%, 52%)";
-      break;
-    default:
-      // Self Care
-      styles.backgroundColor = "hsl(43, 84%, 65%)";
-      break;
-  }
-
   return (
-    <section style={styles}>
+    <section style={{ backgroundColor: props.color }}>
       <div id="banner">
         <CardIcon title={props.title} />
       </div>

@@ -13,6 +13,32 @@ function App() {
 
   const navigation = ["Daily", "Weekly", "Monthly"];
 
+  // possible banner colors
+  const styles = [
+    { title: "Work", color: "hsl(15, 100%, 70%)" },
+    { title: "Play", color: "hsl(195, 74%, 62%)" },
+    { title: "Study", color: "hsl(348, 100%, 68%)" },
+    { title: "Exercise", color: "hsl(145, 58%, 55%)" },
+    { title: "Social", color: "hsl(264, 64%, 52%)" },
+    { title: "Self Care", color: "hsl(43, 84%, 65%)" },
+  ];
+
+  // 1. get the corresponding items from data and styles
+  // 2. if the title matches, push them together into activities
+  // (objects have to have the same amount of items)
+  let activities = [];
+  const keys = Object.keys(data);
+
+  keys.forEach((key) => {
+    if (data[key].title === styles[key].title) {
+      activities.push({
+        title: data[key].title,
+        timeframes: data[key].timeframes,
+        color: styles[key].color,
+      });
+    }
+  });
+
   return (
     <div className="App">
       <header>
@@ -35,15 +61,17 @@ function App() {
           ))}
         </nav>
       </header>
-      {data &&
-        data.map((card) => (
+      {activities &&
+        activities.map((card) => (
           <Card
             title={card.title}
+            color={card.color}
             timeframe={timeframe}
             timeframes={card.timeframes}
             key={card.title}
           />
         ))}
+      : (<p>Error: Data could not be fetched!</p>)
     </div>
   );
 }

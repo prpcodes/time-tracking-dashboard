@@ -53,6 +53,7 @@ function App() {
         <nav id="timeframes">
           {navigation.map((name) => (
             <button
+              key={name}
               onClick={() => {
                 setTimeframe(name);
               }}

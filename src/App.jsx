@@ -1,17 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 //Components
 import Card from "./Components/Card/Card";
 //Images
 import Avatar from "./Images/image-jeremy.png";
-//Data
-import data from "./data.json";
 
 function App() {
+  // set the data used for title and timeframes
+  const [data, setData] = useState({});
   // set the desired timeframe
   const [timeframe, setTimeframe] = useState("Weekly");
   // adds "active" class to the currently selected button
   const [activeButton, setActiveButton] = useState("Weekly");
+
+  // fetch Data from API (local)
+  const getData = () => {
+    fetch("./data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => {
+        const jsonResponse = res.json();
+        return jsonResponse;
+      })
+      .then((jsonResponse) => {
+        setData(jsonResponse);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   // available timeframes
   const navigation = ["Daily", "Weekly", "Monthly"];

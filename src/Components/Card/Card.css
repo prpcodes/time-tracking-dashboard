@@ -27,11 +27,15 @@ section {
   width: 100%;
   border-radius: 15px;
   background-color: var(--darkblue);
-  color: 0.2s ease-in-out;
 }
 
 #card:hover {
   background-color: var(--semidarkblue);
+  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #card #header {

@@ -1,6 +1,6 @@
 # Time Tracking Dashboard
 
-This project is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
+This project is a solution for the [Time Tracking Dashboard Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
 ## Table of contents
 

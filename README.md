@@ -67,13 +67,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 The app is ready to be deployed!
 
-See [Create-React-App]https://create-react-app.dev/docs/deployment#github-pages) for more information.
+See [Create-React-App](https://create-react-app.dev/docs/deployment#github-pages) for more information.
 
 ### `npm run deploy`
 
 Publishes the app to the configured Github Page at `https://myusername.github.io/my-app`
 
-See [Create-React-App]https://create-react-app.dev/docs/deployment#github-pages) for more information.
+See [Create-React-App](https://create-react-app.dev/docs/deployment#github-pages) for more information.
 
 ## Acknowledgments
 

@@ -27,6 +27,7 @@ section {
   width: 100%;
   border-radius: 15px;
   background-color: var(--darkblue);
+  color: 0.2s ease-in-out;
 }
 
 #card:hover {
@@ -62,6 +63,11 @@ section {
 #card #body {
   margin-left: 30px;
   margin-top: 24px;
+  animation: fadeIn linear 0.5s;
+  -webkit-animation: fadeIn linear 0.5s;
+  -moz-animation: fadeIn linear 0.5s;
+  -o-animation: fadeIn linear 0.5s;
+  -ms-animation: fadeIn linear 0.5s;
 }
 
 #card #body #time {
@@ -78,6 +84,41 @@ section {
   color: var(--paleblue);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 1200px) {
   section {
     width: 100%;

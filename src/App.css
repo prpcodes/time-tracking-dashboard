@@ -73,6 +73,7 @@ header #user h1 {
 
 #timeframes button:hover {
   color: #fff;
+  transition: color 0.2s ease-in;
 }
 
 #timeframes button:focus {

@@ -10,6 +10,8 @@ import data from "./data.json";
 function App() {
   // set the desired timeframe
   const [timeframe, setTimeframe] = useState("Weekly");
+  // adds "active" class to the currently selected button
+  const [activeButton, setActiveButton] = useState("Weekly");
 
   // available timeframes
   const navigation = ["Daily", "Weekly", "Monthly"];
@@ -54,8 +56,10 @@ function App() {
           {navigation.map((name) => (
             <button
               key={name}
+              className={name === activeButton ? "active" : ""}
               onClick={() => {
                 setTimeframe(name);
+                setActiveButton(name);
               }}
             >
               {name}

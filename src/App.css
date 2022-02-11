@@ -71,6 +71,10 @@ header #user h1 {
   color: var(--desaturatedblue);
 }
 
+#timeframes button.active {
+  color: #fff;
+}
+
 #timeframes button:hover {
   color: #fff;
   transition: color 0.2s ease-in-out;
@@ -78,10 +82,6 @@ header #user h1 {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-}
-
-#timeframes button:focus {
-  color: #fff;
 }
 
 @media (max-width: 1200px) {

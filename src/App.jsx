@@ -61,7 +61,7 @@ function App() {
           ))}
         </nav>
       </header>
-      {activities &&
+      {activities ? (
         activities.map((card) => (
           <Card
             title={card.title}
@@ -70,8 +70,10 @@ function App() {
             timeframes={card.timeframes}
             key={card.title}
           />
-        ))}
-      : (<p>Error: Data could not be fetched!</p>)
+        ))
+      ) : (
+        <p>Error: Data could not be fetched!</p>
+      )}
     </div>
   );
 }

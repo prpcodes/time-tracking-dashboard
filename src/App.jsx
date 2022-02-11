@@ -8,9 +8,10 @@ import Avatar from "./Images/image-jeremy.png";
 import data from "./data.json";
 
 function App() {
-  // set the desired timeframe and send it to the card component
+  // set the desired timeframe
   const [timeframe, setTimeframe] = useState("Weekly");
 
+  // available timeframes
   const navigation = ["Daily", "Weekly", "Monthly"];
 
   // possible banner colors
@@ -25,7 +26,7 @@ function App() {
 
   // 1. get the corresponding items from data and styles
   // 2. if the title matches, push them together into activities
-  // (objects have to have the same amount of items)
+  // (both objects must have the same amount of items)
   let activities = [];
   const keys = Object.keys(data);
 

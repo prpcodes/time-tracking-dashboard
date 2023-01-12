@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github.com/prpwien/time-tracking-dashboard](https://github.com/prpwien/time-tracking-dashboard)
-- Live Site URL: [prpwien.github.io/time-tracking-dashboard](https://prpwien.github.io/time-tracking-dashboard)
+- Live Site URL: [prpcodes.github.io/time-tracking-dashboard](https://prpwien.github.io/time-tracking-dashboard)
 
 ## Available Scripts
 
